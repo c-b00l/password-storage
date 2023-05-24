@@ -13,14 +13,14 @@ export default function Main() {
 
     return (
         <MainContext.Provider value={value}>
-            <Container className={styles.container}>
+            <div className={styles.container}>
                 <Card className={styles.main}>
                     <Title />
                     <Info />
                     <Username />
                     <Password />
                 </Card>
-            </Container>
+            </div>
         </MainContext.Provider>
     )
 }
