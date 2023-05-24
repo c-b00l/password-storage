@@ -12,6 +12,8 @@ export default function Password() {
             label={getLabel()}
             value={getValue()}
             placeholder={getPlaceholder()}
+            type="password"
+            autoComplete="password"
         />
     )
 }

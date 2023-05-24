@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '@mui/material'
+import { Card, Container } from '@mui/material'
 import Title from './title/react/Title'
 import Info from './info/react/Info'
 import MainContext from './context/MainContext'
@@ -13,11 +13,13 @@ export default function Main() {
 
     return (
         <MainContext.Provider value={value}>
-            <Container className={styles.main}>
-                <Title />
-                <Info />
-                <Username />
-                <Password />
+            <Container className={styles.container}>
+                <Card className={styles.main}>
+                    <Title />
+                    <Info />
+                    <Username />
+                    <Password />
+                </Card>
             </Container>
         </MainContext.Provider>
     )

@@ -1,7 +1,9 @@
-export default function TitlePresenter() {
+import { LocaleContextModel } from '../../../../../type'
+
+export default function TitlePresenter({ translate }: LocaleContextModel) {
     return {
         getTitle() {
-            return 'Password storage'
+            return translate('Password storage')
         },
     }
 }

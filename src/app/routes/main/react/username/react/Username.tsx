@@ -12,6 +12,7 @@ export default function Username() {
             label={getLabel()}
             value={getValue()}
             placeholder={getPlaceholder()}
+            autoComplete="username"
         />
     )
 }
